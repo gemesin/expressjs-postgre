@@ -1,0 +1,628 @@
+{
+	"info": {
+		"_postman_id": "ec812f49-b2e3-42e8-94df-07b67c16c677",
+		"name": "Test Radius",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Admin Branch",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_name\": \"wawan\",\r\n    \"user_email\": \"kurnia.setyo13@gmail.com\",\r\n    \"user_password\": \"123456\",\r\n    \"user_phone_number\": \"082135965203\",\r\n    \"user_first_name\": \"Kurnia\",\r\n    \"user_last_name\": \"Setyo Hermawan\",\r\n    \"user_referal_code\": \"\",\r\n    \"user_profile_url\": \"\",\r\n    \"user_radius_point\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user-branch",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user-branch"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_name\": \"wawan\",\r\n    \"user_email\": \"kurnia.setyo13@gmail.com\",\r\n    \"user_password\": \"123456\",\r\n    \"user_phone_number\": \"082135965203\",\r\n    \"user_first_name\": \"Kurnia\",\r\n    \"user_last_name\": \"Setyo Hermawan\",\r\n    \"user_referal_code\": \"\",\r\n    \"user_profile_url\": \"\",\r\n    \"user_radius_point\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/user-branch",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"user-branch"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "483"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1e3-7sZ6lh73cFPwPGVmdz66simP8X8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jan 2022 17:03:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"message\": \"Berhasil tambah data user branch.\",\n    \"errorData\": {},\n    \"data\": {\n        \"user_id\": 26,\n        \"user_name\": \"wawan\",\n        \"user_email\": \"kurnia.setyo13@gmail.com\",\n        \"user_phone_number\": \"082135965203\",\n        \"user_first_name\": \"Kurnia\",\n        \"user_last_name\": \"Setyo Hermawan\",\n        \"user_referal_code\": \"\",\n        \"user_profile_url\": \"\",\n        \"user_role\": \"admin_branch\",\n        \"user_radius_point\": \"\",\n        \"user_join_date\": \"2022-01-20T17:00:00.000Z\",\n        \"user_status\": \"active\",\n        \"user_created_at\": \"2022-01-20T17:03:28.000Z\",\n        \"user_updated_at\": null\n    }\n}"
+						},
+						{
+							"name": "Failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_name\": \"wawan\",\r\n    \"user_email\": \"kurnia.setyo13@gmail.com\",\r\n    \"user_password\": \"123456\",\r\n    \"user_phone_number\": \"082135965203\",\r\n    \"user_first_name\": \"Kurnia\",\r\n    \"user_last_name\": \"Setyo Hermawan\",\r\n    \"user_referal_code\": \"\",\r\n    \"user_profile_url\": \"\",\r\n    \"user_radius_point\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/user-branch",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"user-branch"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "174"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ae-M9yAAFtH7DPAqlelB9uP9x84Soc\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jan 2022 17:04:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 400,\n    \"message\": \"Cek kembali form Anda.\",\n    \"errorData\": {\n        \"user_name\": \"Username sudah ada.\",\n        \"user_email\": \"Email sudah ada.\",\n        \"user_phone_number\": \"No. telepon sudah ada.\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user-branch",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user-branch"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/user-branch",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"user-branch"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "510"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1fe-OZQtRJjJIlvccoiKSdz0mjqI5Z0\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jan 2022 17:16:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil mendapatkan data user branch.\",\n    \"errorData\": {},\n    \"data\": {\n        \"results\": [\n            {\n                \"user_id\": 29,\n                \"user_name\": \"wawan\",\n                \"user_email\": \"kurnia.setyo13@gmail.com\",\n                \"user_phone_number\": \"082135965203        \",\n                \"user_first_name\": \"Kurnia\",\n                \"user_last_name\": \"Setyo Hermawan\",\n                \"user_referal_code\": \"\",\n                \"user_profile_url\": \"\",\n                \"user_role\": \"admin_branch\",\n                \"user_radius_point\": \"\",\n                \"user_join_date\": \"2022-01-20T17:00:00.000Z\",\n                \"user_status\": \"active\",\n                \"user_created_at\": \"2022-01-20T17:13:25.000Z\",\n                \"user_updated_at\": null\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User Supervisor",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_name\": \"wawanspv\",\r\n    \"user_email\": \"kurnia.setyo13.spv@gmail.com\",\r\n    \"user_password\": \"123456\",\r\n    \"user_phone_number\": \"082135965204\",\r\n    \"user_first_name\": \"Kurnia\",\r\n    \"user_last_name\": \"Setyo Hermawan\",\r\n    \"user_referal_code\": \"\",\r\n    \"user_profile_url\": \"\",\r\n    \"user_radius_point\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user-supervisor",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user-supervisor"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_name\": \"wawanspv\",\r\n    \"user_email\": \"kurnia.setyo13.spv@gmail.com\",\r\n    \"user_password\": \"123456\",\r\n    \"user_phone_number\": \"082135965204\",\r\n    \"user_first_name\": \"Kurnia\",\r\n    \"user_last_name\": \"Setyo Hermawan\",\r\n    \"user_referal_code\": \"\",\r\n    \"user_profile_url\": \"\",\r\n    \"user_radius_point\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/user-supervisor",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"user-supervisor"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "487"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1e7-ToQnAiKLDzMV+4s4iHh1g1Y+C6A\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jan 2022 17:22:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 201,\n    \"message\": \"Berhasil tambah data supervisor.\",\n    \"errorData\": {},\n    \"data\": {\n        \"user_id\": 30,\n        \"user_name\": \"wawanspv\",\n        \"user_email\": \"kurnia.setyo13.spv@gmail.com\",\n        \"user_phone_number\": \"082135965204\",\n        \"user_first_name\": \"Kurnia\",\n        \"user_last_name\": \"Setyo Hermawan\",\n        \"user_referal_code\": \"\",\n        \"user_profile_url\": \"\",\n        \"user_role\": \"supervisor\",\n        \"user_radius_point\": \"\",\n        \"user_join_date\": \"2022-01-20T17:00:00.000Z\",\n        \"user_status\": \"active\",\n        \"user_created_at\": \"2022-01-20T17:21:48.000Z\",\n        \"user_updated_at\": null\n    }\n}"
+						},
+						{
+							"name": "Failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_name\": \"wawanspv\",\r\n    \"user_email\": \"kurnia.setyo13.spv@gmail.com\",\r\n    \"user_password\": \"123456\",\r\n    \"user_phone_number\": \"082135965204\",\r\n    \"user_first_name\": \"Kurnia\",\r\n    \"user_last_name\": \"Setyo Hermawan\",\r\n    \"user_referal_code\": \"\",\r\n    \"user_profile_url\": \"\",\r\n    \"user_radius_point\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/user-supervisor",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"user-supervisor"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "174"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ae-M9yAAFtH7DPAqlelB9uP9x84Soc\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jan 2022 17:22:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 400,\n    \"message\": \"Cek kembali form Anda.\",\n    \"errorData\": {\n        \"user_name\": \"Username sudah ada.\",\n        \"user_email\": \"Email sudah ada.\",\n        \"user_phone_number\": \"No. telepon sudah ada.\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/user-supervisor",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user-supervisor"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/user-supervisor",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"user-supervisor"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "514"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"202-YQiaRMlnTDIFgS9F0jiO1j9lOu0\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jan 2022 17:22:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": 200,\n    \"message\": \"Berhasil mendapatkan data supervisor.\",\n    \"errorData\": {},\n    \"data\": {\n        \"results\": [\n            {\n                \"user_id\": 30,\n                \"user_name\": \"wawanspv\",\n                \"user_email\": \"kurnia.setyo13.spv@gmail.com\",\n                \"user_phone_number\": \"082135965204        \",\n                \"user_first_name\": \"Kurnia\",\n                \"user_last_name\": \"Setyo Hermawan\",\n                \"user_referal_code\": \"\",\n                \"user_profile_url\": \"\",\n                \"user_role\": \"supervisor\",\n                \"user_radius_point\": \"\",\n                \"user_join_date\": \"2022-01-20T17:00:00.000Z\",\n                \"user_status\": \"active\",\n                \"user_created_at\": \"2022-01-20T17:21:48.000Z\",\n                \"user_updated_at\": null\n            }\n        ]\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Change Role User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_role\": \"supervisor\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/user-role/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"user-role",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_role\": \"supervisor\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user-role/29",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user-role",
+								"29"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "489"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e9-YCMIJLLV+bKrpI9WuHOwI9MYEPE\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 21 Jan 2022 17:48:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 201,\n    \"message\": \"Berhasil ubah data.\",\n    \"errorData\": {},\n    \"data\": {\n        \"user_id\": 29,\n        \"user_name\": \"wawan\",\n        \"user_email\": \"kurnia.setyo13@gmail.com\",\n        \"user_phone_number\": \"082135965203\",\n        \"user_first_name\": \"Kurnia\",\n        \"user_last_name\": \"Setyo Hermawan\",\n        \"user_referal_code\": \"\",\n        \"user_profile_url\": \"\",\n        \"user_role\": \"supervisor\",\n        \"user_radius_point\": \"\",\n        \"user_join_date\": \"2022-01-20T17:00:00.000Z\",\n        \"user_status\": \"active\",\n        \"user_created_at\": \"2022-01-20T17:13:25.000Z\",\n        \"user_updated_at\": \"2022-01-20T17:48:11.000Z\"\n    }\n}"
+				},
+				{
+					"name": "Not Found",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_role\": \"supervisor\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user-role/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user-role",
+								"1"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "73"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"49-+R5rvACT3nfRQdD6HTYOtBYWDyk\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 21 Jan 2022 17:48:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 201,\n    \"message\": \"Data tidak ditemukan.\",\n    \"errorData\": {},\n    \"data\": {}\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
