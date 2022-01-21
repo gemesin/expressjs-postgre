@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const app = express()
 
 //controller user
-const user = require('./users')
+const user = require('./src/users')
 
 const port = 3000
 
